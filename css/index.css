@@ -1,0 +1,82 @@
+@import url(./header.css);
+@import url(./profile.css);
+@import url(./footer.css);
+@import url(./tsmv.css);
+@import url(./contact.css);
+
+:root {
+  scroll-behavior: smooth;
+  --primary-theme-color: #20232a;
+  --secondary-theme-color: #282c34;
+  --text-color: #fff;
+  --primary-shadow-color: #8888;
+  --secondary-shadow-color: #21242c80;
+  --button-color: #61dafb;
+  --button-color-active: #fff;
+  --button-text-color: #000;
+  --primary-highlight-color: #03a1bd;
+  --secondary-highlight-color: #ffd700;
+  --padding-section: 4rem 0;
+  --padding-container: 0 2rem;
+  --max-width-container: 1024px;
+  --border-radius: 0.5rem;
+  --all-transitions: all 0.25s;
+}
+
+.body {
+  background-color: var(--primary-theme-color);
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+}
+
+.portada{
+  background-color: #080af0;
+  margin-top: 4.5rem;
+  /* align-items: center; */
+  /* background-position: center; */
+  /* justify-content:center; */
+  /* padding: 0px; */
+}
+
+.portada__image-container{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+.portada-image{
+  width:100%;
+  transition: var(--all-transitions);
+}
+
+@media (min-width: 854px) {
+  .portada{
+    margin-top: -1rem;
+    /* margin: 0;
+    padding: 0; */
+  }
+
+  .portada__image-container{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    margin: 0rem;
+    padding: 0.15em;
+  }
+  .portada-image {
+      width: 100%;
+      transition: var(--all-transitions);
+    }
+
+  :root {
+    --padding-container: 0 0.75em;
+  }
+  
+  
+}
